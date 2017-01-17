@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $(dirname $0)
+cd ./../
+
+carthage bootstrap --platform ios
+carthage bootstrap --platform tvos
+cp Cartfile.resolved Carthage

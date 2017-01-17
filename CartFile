@@ -1,0 +1,4 @@
+github "robrix/Prelude"
+github "thoughtbot/Argo"
+github "thoughtbot/Curry"
+github "ReactiveCocoa/ReactiveSwift" ~> 1.0
