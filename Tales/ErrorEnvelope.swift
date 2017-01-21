@@ -16,14 +16,7 @@ public struct ErrorEnvelope {
     public enum KsrCode: String {
         // Codes defined by the server
         case AccessTokenInvalid = "access_token_invalid"
-        case ConfirmFacebookSignup = "confirm_facebook_signup"
-        case FacebookConnectAccountTaken = "facebook_connect_account_taken"
-        case FacebookConnectEmailTaken = "facebook_connect_email_taken"
-        case FacebookInvalidAccessToken = "facebook_invalid_access_token"
         case InvalidXauthLogin = "invalid_xauth_login"
-        case MissingFacebookEmail = "missing_facebook_email"
-        case TfaFailed = "tfa_failed"
-        case TfaRequired = "tfa_required"
         
         // Catch all code for when server sends code we don't know about yet
         case UnknownCode = "__internal_unknown_code"
@@ -48,7 +41,7 @@ public struct ErrorEnvelope {
      A general error that the error envelope JSON could not be parsed.
      */
     internal static let couldNotParseErrorEnvelopeJSON = ErrorEnvelope(
-        errorMessages: [],
+        errorMessages: ["something herere"],
         ksrCode: .ErrorEnvelopeJSONParsingFailed,
         httpCode: 400
     )

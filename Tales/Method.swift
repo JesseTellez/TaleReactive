@@ -6,7 +6,7 @@
 //  Copyright © 2017 Tales. All rights reserved.
 //
 
-public enum Method {
+public enum Method: String {
     
     case GET
     case POST

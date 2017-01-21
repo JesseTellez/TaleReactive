@@ -18,7 +18,7 @@ public struct ServerConfig: ServerConfigType {
     
     public let apiBaseUrl: URL
     
-    public static let local: ServerConfigType = ServerConfig(apiBaseURL: URL(string:"http://localhost:5000")!)
+    public static let local: ServerConfigType = ServerConfig(apiBaseURL: URL(string:"localhost:5000")!)
     
     public init(apiBaseURL: URL) {
         self.apiBaseUrl = apiBaseURL

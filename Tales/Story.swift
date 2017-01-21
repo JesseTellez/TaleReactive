@@ -13,13 +13,8 @@ import Runes
 public struct Story {
     
     public let id: Int
-    public let owner_id: Int
-    public let genre_id: Int
     public let title: String
-    public let isTrending: Bool
-    public let uniqueIndicies: Int
-    public let created_at: TimeInterval
-    public let updated_at: TimeInterval
+    public let number_of_bookmarks: Int
     
 }
 
@@ -29,13 +24,10 @@ extension Story: Decodable {
         let create = curry(Story.init)
         return create
         <^> json <| "id"
-        <*> json <| "owner_id"
-        <*> json <| "genre_id"
         <*> json <| "title"
-        <*> json <| "is_trending"
-        <*> json <| "unique_indicies"
-        <*> json <| "created_at"
-        <*> json <| "updated_at"
+        <*> json <| "number_of_bookmarks"
     }
     
 }
+
+

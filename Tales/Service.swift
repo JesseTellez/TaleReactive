@@ -56,14 +56,11 @@ public struct Service: ServiceType {
             
             let properties = route.requestProperties
             
-            guard let URL = URL(string: properties.path, relativeTo: self.serverConfig.apiBaseUrl as URL) else {
-                fatalError(
-                    "URL(string: \(properties.path), relativeToURL: \(self.serverConfig.apiBaseUrl)) == nil"
-                )
-            }
+            var url = URL(string:"http://localhost:5000")
+            url?.appendPathComponent(properties.path)
             
             return Service.session.rac_JSONResponse(
-                preparedRequest(forURL: URL, method: properties.method, query: properties.query)
+                preparedRequest(forURL: url!, method: properties.method, query: properties.query)
                 )
                 .flatMap(decodeModel)
     }

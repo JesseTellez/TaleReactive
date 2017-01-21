@@ -10,7 +10,7 @@ private func parseJSONData(_ data: Data) -> Any? {
     return (try? JSONSerialization.jsonObject(with: data, options: []))
 }
 
-private let scheduler = QueueScheduler(qos: .background, name: "com.kickstarter.ksapi", targeting: nil)
+private let scheduler = QueueScheduler(qos: .background, name: "com.tales.talesapi", targeting: nil)
 
 internal extension URLSession {
     
@@ -47,7 +47,7 @@ internal extension URLSession {
                             }
                     }
                     return SignalProducer(value: data)
-            }
+            }.logEvents()
     }
     
     // Converts an URLSessionTask into a signal producer of raw JSON data. If the JSON does not parse
