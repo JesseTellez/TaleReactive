@@ -16,6 +16,9 @@
 		1810B6461E25C5480045103F /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810B6451E25C5480045103F /* Prelude.framework */; };
 		1810B6481E25C54D0045103F /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810B6471E25C54D0045103F /* Runes.framework */; };
 		1810B64A1E25C70E0045103F /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810B6491E25C70E0045103F /* Curry.framework */; };
+		181167261E35D1370072C428 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181167251E35D1370072C428 /* UIViewExtensions.swift */; };
+		181167281E35D3790072C428 /* UIViewControllerPrep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181167271E35D3790072C428 /* UIViewControllerPrep.swift */; };
+		1811672A1E35D77D0072C428 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181167291E35D77D0072C428 /* StoriesTableViewController.swift */; };
 		188AD0AB1E25CB6900B98BF1 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD0AA1E25CB6900B98BF1 /* ServiceType.swift */; };
 		188AD0B31E25D28700B98BF1 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AD0B21E25D28700B98BF1 /* ReactiveSwift.framework */; };
 		188AD0B51E25D29000B98BF1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AD0B41E25D29000B98BF1 /* Result.framework */; };
@@ -74,6 +77,11 @@
 		188AD1221E275E6800B98BF1 /* OauthTokenAuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1211E275E6800B98BF1 /* OauthTokenAuthType.swift */; };
 		188AD1241E28645400B98BF1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1231E28645400B98BF1 /* Service.swift */; };
 		188AD1271E2C96C700B98BF1 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1261E2C96C700B98BF1 /* NSURLSession.swift */; };
+		188AD13D1E341CA300B98BF1 /* StoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD13C1E341CA300B98BF1 /* StoriesDataSource.swift */; };
+		188AD1401E341EDD00B98BF1 /* ValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD13F1E341EDD00B98BF1 /* ValueCell.swift */; };
+		188AD1421E341F6600B98BF1 /* ValueCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1411E341F6600B98BF1 /* ValueCellDataSource.swift */; };
+		188AD1451E35C5A300B98BF1 /* StoriesFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1441E35C5A300B98BF1 /* StoriesFeedCell.swift */; };
+		188AD1471E35C68400B98BF1 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AD1461E35C68400B98BF1 /* StoryViewModel.swift */; };
 		88F628411E2DC12A00ACC7F2 /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F628401E2DC12900ACC7F2 /* StoriesViewModel.swift */; };
 		88F6284F1E2DC65800ACC7F2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6284E1E2DC65800ACC7F2 /* Environment.swift */; };
 		88F628531E2F0B6800ACC7F2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F628521E2F0B6800ACC7F2 /* TestViewController.swift */; };
@@ -92,6 +100,9 @@
 		1810B6451E25C5480045103F /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/iOS/Prelude.framework; sourceTree = "<group>"; };
 		1810B6471E25C54D0045103F /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		1810B6491E25C70E0045103F /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		181167251E35D1370072C428 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		181167271E35D3790072C428 /* UIViewControllerPrep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerPrep.swift; sourceTree = "<group>"; };
+		181167291E35D77D0072C428 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 		188AD0AA1E25CB6900B98BF1 /* ServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
 		188AD0B21E25D28700B98BF1 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		188AD0B41E25D29000B98BF1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -150,6 +161,11 @@
 		188AD1211E275E6800B98BF1 /* OauthTokenAuthType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthTokenAuthType.swift; sourceTree = "<group>"; };
 		188AD1231E28645400B98BF1 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		188AD1261E2C96C700B98BF1 /* NSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
+		188AD13C1E341CA300B98BF1 /* StoriesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesDataSource.swift; sourceTree = "<group>"; };
+		188AD13F1E341EDD00B98BF1 /* ValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCell.swift; sourceTree = "<group>"; };
+		188AD1411E341F6600B98BF1 /* ValueCellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCellDataSource.swift; sourceTree = "<group>"; };
+		188AD1441E35C5A300B98BF1 /* StoriesFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesFeedCell.swift; sourceTree = "<group>"; };
+		188AD1461E35C68400B98BF1 /* StoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
 		88F628401E2DC12900ACC7F2 /* StoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 		88F6284E1E2DC65800ACC7F2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		88F628521E2F0B6800ACC7F2 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +209,8 @@
 		1810B6281E24B1170045103F /* Tales */ = {
 			isa = PBXGroup;
 			children = (
+				188AD13E1E341EBE00B98BF1 /* KSClasses */,
+				188AD13B1E341C7400B98BF1 /* DataSource */,
 				88F628501E2F0AF100ACC7F2 /* Views */,
 				88F6284D1E2DC64600ACC7F2 /* Library */,
 				88F6283F1E2DC10300ACC7F2 /* ViewModels */,
@@ -346,10 +364,38 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
+		188AD13B1E341C7400B98BF1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				188AD13C1E341CA300B98BF1 /* StoriesDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		188AD13E1E341EBE00B98BF1 /* KSClasses */ = {
+			isa = PBXGroup;
+			children = (
+				188AD13F1E341EDD00B98BF1 /* ValueCell.swift */,
+				188AD1411E341F6600B98BF1 /* ValueCellDataSource.swift */,
+				181167251E35D1370072C428 /* UIViewExtensions.swift */,
+				181167271E35D3790072C428 /* UIViewControllerPrep.swift */,
+			);
+			name = KSClasses;
+			sourceTree = "<group>";
+		};
+		188AD1431E35C19300B98BF1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				188AD1441E35C5A300B98BF1 /* StoriesFeedCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		88F6283F1E2DC10300ACC7F2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				88F628401E2DC12900ACC7F2 /* StoriesViewModel.swift */,
+				188AD1461E35C68400B98BF1 /* StoryViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -366,6 +412,7 @@
 		88F628501E2F0AF100ACC7F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				188AD1431E35C19300B98BF1 /* Cells */,
 				88F628511E2F0AF900ACC7F2 /* Controllers */,
 			);
 			name = Views;
@@ -376,6 +423,7 @@
 			children = (
 				1810B62B1E24B1170045103F /* ViewController.swift */,
 				88F628521E2F0B6800ACC7F2 /* TestViewController.swift */,
+				181167291E35D77D0072C428 /* StoriesTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -489,18 +537,22 @@
 				188AD0E01E25DC4F00B98BF1 /* Rac.swift in Sources */,
 				188AD1221E275E6800B98BF1 /* OauthTokenAuthType.swift in Sources */,
 				188AD1081E25DC7100B98BF1 /* Uncollect.swift in Sources */,
+				181167261E35D1370072C428 /* UIViewExtensions.swift in Sources */,
 				188AD1061E25DC7100B98BF1 /* UITextView.swift in Sources */,
 				188AD0C11E25DC0F00B98BF1 /* DemoteErrors.swift in Sources */,
 				188AD10C1E25DC8000B98BF1 /* WithLatestFrom.swift in Sources */,
+				188AD1421E341F6600B98BF1 /* ValueCellDataSource.swift in Sources */,
 				188AD11F1E275CE300B98BF1 /* Route.swift in Sources */,
 				188AD1011E25DC7100B98BF1 /* UIRefreshControl.swift in Sources */,
 				188AD0C21E25DC0F00B98BF1 /* Enumerated.swift in Sources */,
 				188AD0D91E25DC4F00B98BF1 /* LazyMutableProperty.swift in Sources */,
+				181167281E35D3790072C428 /* UIViewControllerPrep.swift in Sources */,
 				188AD0FD1E25DC7100B98BF1 /* UIButton.swift in Sources */,
 				188AD0C71E25DC2E00B98BF1 /* FilterWhenLatestFrom.swift in Sources */,
 				1810B62C1E24B1170045103F /* ViewController.swift in Sources */,
 				188AD0BF1E25DC0F00B98BF1 /* Concat.swift in Sources */,
 				188AD0F81E25DC7100B98BF1 /* SwitchMap.swift in Sources */,
+				188AD13D1E341CA300B98BF1 /* StoriesDataSource.swift in Sources */,
 				188AD0DA1E25DC4F00B98BF1 /* MapConst.swift in Sources */,
 				188AD0F71E25DC7100B98BF1 /* Sort.swift in Sources */,
 				188AD0FC1E25DC7100B98BF1 /* UIBarButtonItem.swift in Sources */,
@@ -513,6 +565,7 @@
 				188AD0BE1E25DC0F00B98BF1 /* CombinePrevious.swift in Sources */,
 				188AD1121E26280A00B98BF1 /* Story.swift in Sources */,
 				188AD0C31E25DC0F00B98BF1 /* Errors.swift in Sources */,
+				188AD1401E341EDD00B98BF1 /* ValueCell.swift in Sources */,
 				188AD0FE1E25DC7100B98BF1 /* UIControl.swift in Sources */,
 				1810B62A1E24B1170045103F /* AppDelegate.swift in Sources */,
 				188AD0C81E25DC2E00B98BF1 /* FlatMap.swift in Sources */,
@@ -531,10 +584,13 @@
 				188AD1091E25DC7100B98BF1 /* Values.swift in Sources */,
 				188AD10D1E25DC8000B98BF1 /* WrapInOptional.swift in Sources */,
 				188AD1071E25DC7100B98BF1 /* UIView.swift in Sources */,
+				188AD1471E35C68400B98BF1 /* StoryViewModel.swift in Sources */,
+				1811672A1E35D77D0072C428 /* StoriesTableViewController.swift in Sources */,
 				188AD0FF1E25DC7100B98BF1 /* UILabel.swift in Sources */,
 				188AD0E11E25DC4F00B98BF1 /* Scan.swift in Sources */,
 				188AD0AB1E25CB6900B98BF1 /* ServiceType.swift in Sources */,
 				188AD0DC1E25DC4F00B98BF1 /* MergeWith.swift in Sources */,
+				188AD1451E35C5A300B98BF1 /* StoriesFeedCell.swift in Sources */,
 				188AD1031E25DC7100B98BF1 /* UIStackView.swift in Sources */,
 				188AD0BD1E25DC0F00B98BF1 /* AllValues.swift in Sources */,
 			);

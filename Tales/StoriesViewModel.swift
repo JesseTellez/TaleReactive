@@ -16,6 +16,8 @@ public protocol StoriesViewModelInputs {
     
     func reactiveButtonPressed()
     
+    func willDisplayRow(_ row: Int, outOf totalRows: Int)
+    
 }
 
 public protocol StoriesViewModelOutputs {
@@ -53,20 +55,19 @@ public final class StoriesViewModel: StoriesViewModelType, StoriesViewModelInput
     public func userSessionStarted() {
         self.userSessionStartedProperty.value = ()
     }
+    fileprivate let willDisplayRowProperty = MutableProperty<(row: Int, total: Int)?>(nil)
+    public func willDisplayRow(_ row: Int, outOf totalRows: Int) {
+        self.willDisplayRowProperty.value = (row, totalRows)
+    }
     
     public init() {
-        
-        
-        //Signal<[Story], NoError>
-        //SignalProducer<StoriesEnvelope, ErrorEnvelope>
-        // map each story in the story envelope (evelope in to a signal of the story array)
         
         let firstLoad = Signal.merge(self.userSessionStartedProperty.signal)
         
         let stories2 = firstLoad.flatMap {
             _  -> SignalProducer<[Story], NoError> in
             return ENV.apiService.fetchStories().map {$0.stories}.demoteErrors()
-        }.skip(first: 0)
+        }.skip(first: 0).logEvents()
         
         
         self.stories = stories2

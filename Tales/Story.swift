@@ -12,9 +12,9 @@ import Runes
 
 public struct Story {
     
-    public let id: Int
+    public let id: String
     public let title: String
-    public let number_of_bookmarks: Int
+    public let number_of_bookmarks: String
     
 }
 
