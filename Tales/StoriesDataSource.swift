@@ -33,6 +33,4 @@ internal final class StoriesDataSource: ValueCellDataSource {
         }
     }
     
-    
-    
 }

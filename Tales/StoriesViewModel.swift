@@ -16,6 +16,8 @@ public protocol StoriesViewModelInputs {
     
     func reactiveButtonPressed()
     
+    func viewDidLoad()
+    
     func willDisplayRow(_ row: Int, outOf totalRows: Int)
     
 }
@@ -24,8 +26,6 @@ public protocol StoriesViewModelOutputs {
     
     //Emits an array of stories that should be displayed
     var stories: Signal<[Story], NoError> { get }
-    func userSessionStarted()
-    func viewWillAppear(animated: Bool)
     
 }
 
@@ -47,27 +47,24 @@ public final class StoriesViewModel: StoriesViewModelType, StoriesViewModelInput
     public var outputs: StoriesViewModelOutputs {return self}
     public let stories: Signal<[Story], NoError>
     
-    fileprivate let viewWillAppearProperty = MutableProperty<Bool?>(nil)
-    public func viewWillAppear(animated: Bool) {
-        self.viewWillAppearProperty.value = animated
-    }
-    fileprivate let userSessionStartedProperty = MutableProperty(())
-    public func userSessionStarted() {
-        self.userSessionStartedProperty.value = ()
-    }
     fileprivate let willDisplayRowProperty = MutableProperty<(row: Int, total: Int)?>(nil)
     public func willDisplayRow(_ row: Int, outOf totalRows: Int) {
         self.willDisplayRowProperty.value = (row, totalRows)
     }
     
+    fileprivate let viewDidLoadProperty = MutableProperty()
+    public func viewDidLoad() {
+        self.viewDidLoadProperty.value = ()
+    }
+    
     public init() {
         
-        let firstLoad = Signal.merge(self.userSessionStartedProperty.signal)
+        let firstLoad = Signal.merge(self.viewDidLoadProperty.signal)
         
-        let stories2 = firstLoad.flatMap {
+        let stories2 = firstLoad.flatMap(.concat) {
             _  -> SignalProducer<[Story], NoError> in
             return ENV.apiService.fetchStories().map {$0.stories}.demoteErrors()
-        }.skip(first: 0).logEvents()
+        }.logEvents()
         
         
         self.stories = stories2

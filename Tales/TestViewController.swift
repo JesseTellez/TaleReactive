@@ -19,6 +19,8 @@ internal final class TestViewController: UIViewController {
     internal override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.storiesTableView.dataSource = dataSource
+        self.viewModel.inputs.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {

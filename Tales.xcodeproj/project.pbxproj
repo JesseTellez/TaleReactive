@@ -86,6 +86,7 @@
 		88F6284F1E2DC65800ACC7F2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6284E1E2DC65800ACC7F2 /* Environment.swift */; };
 		88F628531E2F0B6800ACC7F2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F628521E2F0B6800ACC7F2 /* TestViewController.swift */; };
 		88F628651E333AF900ACC7F2 /* Paginate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F628641E333AF900ACC7F2 /* Paginate.swift */; };
+		88F6288D1E37333C00ACC7F2 /* UITableView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6288C1E37333C00ACC7F2 /* UITableView-Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,7 @@
 		88F6284E1E2DC65800ACC7F2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		88F628521E2F0B6800ACC7F2 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		88F628641E333AF900ACC7F2 /* Paginate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paginate.swift; sourceTree = "<group>"; };
+		88F6288C1E37333C00ACC7F2 /* UITableView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 				188AD1411E341F6600B98BF1 /* ValueCellDataSource.swift */,
 				181167251E35D1370072C428 /* UIViewExtensions.swift */,
 				181167271E35D3790072C428 /* UIViewControllerPrep.swift */,
+				88F6288C1E37333C00ACC7F2 /* UITableView-Extensions.swift */,
 			);
 			name = KSClasses;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				188AD10C1E25DC8000B98BF1 /* WithLatestFrom.swift in Sources */,
 				188AD1421E341F6600B98BF1 /* ValueCellDataSource.swift in Sources */,
 				188AD11F1E275CE300B98BF1 /* Route.swift in Sources */,
+				88F6288D1E37333C00ACC7F2 /* UITableView-Extensions.swift in Sources */,
 				188AD1011E25DC7100B98BF1 /* UIRefreshControl.swift in Sources */,
 				188AD0C21E25DC0F00B98BF1 /* Enumerated.swift in Sources */,
 				188AD0D91E25DC4F00B98BF1 /* LazyMutableProperty.swift in Sources */,
